@@ -15,4 +15,4 @@ fit = sm.sampling(data=data)
 params = fit.extract()
 W = params["w"]
 
-print(W)
+print(W.mean())
