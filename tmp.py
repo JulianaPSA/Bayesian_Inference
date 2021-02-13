@@ -1,7 +1,9 @@
 import pystan
 import numpy as np
+import pickle
 
-sm = pystan.StanModel(file="./stan_models/linear_model_0.stan")
+# sm = pystan.StanModel(file="./stan_models/linear_model_0.stan")
+sm = pickle.load(open("./stan_models/linear_model_0.pic", "rb"))
 
 n = 3
 x = np.linspace(0, 1, n)
