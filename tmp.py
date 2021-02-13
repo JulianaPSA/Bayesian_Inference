@@ -7,10 +7,10 @@ n = 3
 x = np.linspace(0, 1, n)
 y = 3*x
 
-data = {"N":n, "x":x, "y":y}
+data = {"N": n, "x": x, "y": y}
 fit = sm.sampling(data=data)
 
-params = fit.stract()
+params = fit.extract()
 W = params["w"]
 
 print(W)
