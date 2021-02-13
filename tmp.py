@@ -7,7 +7,7 @@ sm = pickle.load(open("./stan_models/linear_model_0.pic", "rb"))
 
 n = 3
 x = np.linspace(0, 1, n)
-y = 3*x
+y = 8*x
 
 data = {"N": n, "x": x, "y": y}
 fit = sm.sampling(data=data)
