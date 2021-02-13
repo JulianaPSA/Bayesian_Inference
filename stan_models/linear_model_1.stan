@@ -12,6 +12,6 @@ parameters{
 model{
     w ~ multi_normal(rep_vector(0, D), diag_matrix(rep_vector(10,D)));
     for (i in 1:N){
-        y[i] ~ normal(w*X[i], 1);
+        y[i] ~ normal(X[i]*w, 1);
     }
 }
