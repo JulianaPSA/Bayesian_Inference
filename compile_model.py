@@ -1,5 +1,6 @@
 import sys
 import pickle
+import pystan
 
 st_code = sys.argv[1]
 st_obj = sys.argv[2]
