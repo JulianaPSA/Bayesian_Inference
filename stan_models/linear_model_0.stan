@@ -13,7 +13,7 @@ parameters{
 model{
 
     w ~ normal(0,10);
-    for (i in 1:m){
+    for (i in 1:N){
         y[i] ~ normal(w*x[i], 1)
     }
 }
